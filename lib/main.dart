@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ulife_rc/Conversations.dart';
-import 'package:ulife_rc/Integration.dart';
-import 'package:ulife_rc/Login.dart';
-import 'package:ulife_rc/Messages.dart';
-import 'package:ulife_rc/Welcome.dart';
+
+import 'Conversations.dart';
 
 void main() => runApp(MyApp());
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:ulife_rc/shared/SharedLibrary.dart';
+
+import 'shared/SharedLibrary.dart';
 
 class Register extends StatefulWidget {
   Register({Key key, this.title}) : super(key: key);
@@ -83,7 +84,7 @@ class _RegisterState extends State<Register> {
                                       fontFamily: "SourceSansPro",
                                       fontWeight: FontWeight.bold,
                                       color:
-                                      ShareLibrary.colors["main__darked"]),
+                                          ShareLibrary.colors["main__darked"]),
                                   textAlign: TextAlign.center),
                             ],
                           ),
@@ -113,18 +114,23 @@ class _RegisterState extends State<Register> {
                             children: <Widget>[
                               Container(
                                 padding: EdgeInsets.symmetric(horizontal: 10),
-                                margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                                margin: EdgeInsets.symmetric(
+                                    horizontal: 20, vertical: 10),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   border: Border(
                                     top: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                     left: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                     right: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                     bottom: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                   ),
                                   borderRadius: new BorderRadius.circular(0.0),
                                 ),
@@ -135,25 +141,32 @@ class _RegisterState extends State<Register> {
                                   decoration: InputDecoration(
                                       labelText: 'Email',
                                       border: InputBorder.none,
-                                      icon: new Icon(Icons.mail, color: Colors.grey.withOpacity(0.2),)
-                                  ),
+                                      icon: new Icon(
+                                        Icons.mail,
+                                        color: Colors.grey.withOpacity(0.2),
+                                      )),
                                   style: TextStyle(fontFamily: "SourceSansPro"),
                                 ),
                               ),
                               Container(
                                 padding: EdgeInsets.symmetric(horizontal: 12),
-                                margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                                margin: EdgeInsets.symmetric(
+                                    horizontal: 20, vertical: 10),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   border: Border(
                                     top: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                     left: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                     right: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                     bottom: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                   ),
                                   borderRadius: new BorderRadius.circular(5.0),
                                 ),
@@ -163,26 +176,32 @@ class _RegisterState extends State<Register> {
                                   decoration: InputDecoration(
                                       labelText: 'Entreprise name',
                                       border: InputBorder.none,
-                                      icon: new Icon(Icons.work, color: Colors.grey.withOpacity(0.2),)
-
-                                  ),
+                                      icon: new Icon(
+                                        Icons.work,
+                                        color: Colors.grey.withOpacity(0.2),
+                                      )),
                                   style: TextStyle(fontFamily: "SourceSansPro"),
                                 ),
                               ),
                               Container(
                                 padding: EdgeInsets.symmetric(horizontal: 12),
-                                margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                                margin: EdgeInsets.symmetric(
+                                    horizontal: 20, vertical: 10),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   border: Border(
                                     top: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                     left: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                     right: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                     bottom: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                   ),
                                   borderRadius: new BorderRadius.circular(5.0),
                                 ),
@@ -193,9 +212,10 @@ class _RegisterState extends State<Register> {
                                   decoration: InputDecoration(
                                       labelText: 'Password',
                                       border: InputBorder.none,
-                                      icon: new Icon(Icons.lock, color: Colors.grey.withOpacity(0.2),)
-
-                                  ),
+                                      icon: new Icon(
+                                        Icons.lock,
+                                        color: Colors.grey.withOpacity(0.2),
+                                      )),
                                   style: TextStyle(fontFamily: "SourceSansPro"),
                                 ),
                               ),
@@ -232,7 +252,7 @@ class _RegisterState extends State<Register> {
                                 margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
                                 child: Row(
                                   mainAxisAlignment:
-                                  MainAxisAlignment.spaceEvenly,
+                                      MainAxisAlignment.spaceEvenly,
                                   children: <Widget>[
                                     InkWell(
                                       child: Text(
@@ -241,7 +261,7 @@ class _RegisterState extends State<Register> {
                                               fontSize: 13,
                                               fontFamily: 'SourceSansPro',
                                               color:
-                                              Color.fromRGBO(0, 0, 0, 0.75),
+                                                  Color.fromRGBO(0, 0, 0, 0.75),
                                               fontWeight: FontWeight.bold)),
                                       onTap: () => null,
                                     )

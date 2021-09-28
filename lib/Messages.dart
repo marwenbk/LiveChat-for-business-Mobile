@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ulife_rc/shared/SharedLibrary.dart';
+
+import 'shared/SharedLibrary.dart';
 
 class Messages extends StatefulWidget {
   Messages({Key key, this.title}) : super(key: key);
@@ -80,7 +81,6 @@ class _MessagesState extends State<Messages> {
         iconTheme: IconThemeData(color: Colors.black),
       ),
       body: Stack(
-
         children: <Widget>[
           Container(
             margin: EdgeInsets.fromLTRB(0, 0, 0, 70),
@@ -122,7 +122,10 @@ class _MessagesState extends State<Messages> {
                     ),
                   ),
                   InkWell(
-                      child: Icon(Icons.send, color: ShareLibrary.colors["main__darked"],),
+                      child: Icon(
+                        Icons.send,
+                        color: ShareLibrary.colors["main__darked"],
+                      ),
                       onTap: () {
                         if (myController.text != "") {
                           //sendMessage(myController.text);
@@ -149,8 +152,9 @@ class _MessagesState extends State<Messages> {
             child: Container(
                 width: screenSize * 0.8,
                 decoration: BoxDecoration(
-                  color: i%3 != 0 ? Color.fromRGBO(22, 53, 6, 0.05) : Colors.white,
-
+                  color: i % 3 != 0
+                      ? Color.fromRGBO(22, 53, 6, 0.05)
+                      : Colors.white,
                   borderRadius: new BorderRadius.circular(8.0),
                 ),
                 margin: EdgeInsets.fromLTRB(10, 10, 10, 5),

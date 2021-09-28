@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ulife_rc/shared/SharedLibrary.dart';
+
+import 'shared/SharedLibrary.dart';
 
 class Integration extends StatefulWidget {
   Integration({Key key, this.title}) : super(key: key);
@@ -24,7 +25,6 @@ class _IntegrationState extends State<Integration> {
   bool isLoading = false;
   String invalidNumber = "";
 
-
   void _incrementCounter() {
     setState(() {
       // This call to setState tells the Flutter framework that something has
@@ -35,13 +35,13 @@ class _IntegrationState extends State<Integration> {
       _counter++;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     var screenHeight = MediaQuery.of(context).size.height;
     var screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
-
       body: Column(
         children: [
           Container(
@@ -49,7 +49,6 @@ class _IntegrationState extends State<Integration> {
             height: screenHeight,
             child: Container(
               color: ShareLibrary.colors["background"],
-
               child: Container(
                 width: double.infinity,
                 margin: EdgeInsets.fromLTRB(10, 20, 0, 0),
@@ -58,7 +57,8 @@ class _IntegrationState extends State<Integration> {
                     Column(
                       children: <Widget>[
                         Container(
-                          child: Image(image: AssetImage("assets/launching.png")),
+                          child:
+                              Image(image: AssetImage("assets/launching.png")),
                           height: 250,
                         ),
                         Container(
@@ -73,9 +73,8 @@ class _IntegrationState extends State<Integration> {
                                       fontSize: 22,
                                       fontFamily: "SourceSansPro",
                                       fontWeight: FontWeight.bold,
-                                      color: ShareLibrary.colors["text_color"] ),
+                                      color: ShareLibrary.colors["text_color"]),
                                   textAlign: TextAlign.center),
-
                             ],
                           ),
                         ),
@@ -120,12 +119,14 @@ class _IntegrationState extends State<Integration> {
                                         fontWeight: FontWeight.bold,
                                         color: Colors.white,
                                         fontFamily: 'SourceSansPro')),
-                                Icon(Icons.exit_to_app, color: Colors.white.withOpacity(0.7),)
+                                Icon(
+                                  Icons.exit_to_app,
+                                  color: Colors.white.withOpacity(0.7),
+                                )
                               ],
                             ),
                           ),
                         ),
-
                       ],
                     )
                   ],
@@ -133,8 +134,6 @@ class _IntegrationState extends State<Integration> {
               ),
             ),
           ),
-
-
         ],
       ),
     );

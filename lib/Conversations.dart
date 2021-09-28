@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ulife_rc/shared/SharedLibrary.dart';
+
+import 'shared/SharedLibrary.dart';
 
 class Conversation extends StatefulWidget {
   Conversation({Key key, this.title}) : super(key: key);
@@ -74,7 +75,6 @@ class _ConversationState extends State<Conversation> {
       body: ListView(
         //mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-
           Container(
             color: Colors.white,
             margin: EdgeInsets.fromLTRB(0, 10, 0, 10),
@@ -145,7 +145,6 @@ class _ConversationState extends State<Conversation> {
                   ),
                   isThreeLine: true,
                 ),
-
                 ListTile(
                   leading: new Container(
                       width: 40.0,
@@ -191,7 +190,6 @@ class _ConversationState extends State<Conversation> {
                   ),
                   isThreeLine: true,
                 ),
-
                 ListTile(
                   leading: new Container(
                       width: 40.0,
@@ -282,7 +280,6 @@ class _ConversationState extends State<Conversation> {
                   ),
                   isThreeLine: true,
                 ),
-
                 ListTile(
                   leading: new Container(
                       width: 40.0,
@@ -328,7 +325,6 @@ class _ConversationState extends State<Conversation> {
                   ),
                   isThreeLine: true,
                 ),
-
                 ListTile(
                   leading: new Container(
                       width: 40.0,
@@ -419,7 +415,6 @@ class _ConversationState extends State<Conversation> {
                   ),
                   isThreeLine: true,
                 ),
-
                 ListTile(
                   leading: new Container(
                       width: 40.0,
@@ -465,7 +460,6 @@ class _ConversationState extends State<Conversation> {
                   ),
                   isThreeLine: true,
                 ),
-
                 ListTile(
                   leading: new Container(
                       width: 40.0,
@@ -800,7 +794,6 @@ class _ConversationState extends State<Conversation> {
               ],
             ),
           ),
-
         ],
       ),
     );

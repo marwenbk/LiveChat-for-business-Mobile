@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:ulife_rc/shared/SharedLibrary.dart';
+
+import 'shared/SharedLibrary.dart';
 
 class Login extends StatefulWidget {
   Login({Key key, this.title}) : super(key: key);
@@ -113,18 +114,23 @@ class _LoginState extends State<Login> {
                             children: <Widget>[
                               Container(
                                 padding: EdgeInsets.symmetric(horizontal: 10),
-                                margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                                margin: EdgeInsets.symmetric(
+                                    horizontal: 20, vertical: 10),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   border: Border(
                                     top: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                     left: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                     right: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                     bottom: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                   ),
                                   borderRadius: new BorderRadius.circular(0.0),
                                 ),
@@ -133,28 +139,34 @@ class _LoginState extends State<Login> {
                                   keyboardType: TextInputType.emailAddress,
 
                                   decoration: InputDecoration(
-                                    labelText: 'Email',
-                                    border: InputBorder.none,
-                                      icon: new Icon(Icons.mail, color: Colors.grey.withOpacity(0.2),)
-                                  ),
+                                      labelText: 'Email',
+                                      border: InputBorder.none,
+                                      icon: new Icon(
+                                        Icons.mail,
+                                        color: Colors.grey.withOpacity(0.2),
+                                      )),
                                   style: TextStyle(fontFamily: "SourceSansPro"),
                                 ),
                               ),
-
                               Container(
                                 padding: EdgeInsets.symmetric(horizontal: 12),
-                                margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                                margin: EdgeInsets.symmetric(
+                                    horizontal: 20, vertical: 10),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   border: Border(
                                     top: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                     left: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                     right: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                     bottom: BorderSide(
-                                        width: 0, color: Color.fromRGBO(0, 0, 0, 0.15)),
+                                        width: 0,
+                                        color: Color.fromRGBO(0, 0, 0, 0.15)),
                                   ),
                                   borderRadius: new BorderRadius.circular(5.0),
                                 ),
@@ -163,11 +175,12 @@ class _LoginState extends State<Login> {
                                   obscureText: true,
                                   keyboardType: TextInputType.visiblePassword,
                                   decoration: InputDecoration(
-                                    labelText: 'Password',
-                                    border: InputBorder.none,
-                                      icon: new Icon(Icons.lock, color: Colors.grey.withOpacity(0.2),)
-
-                                  ),
+                                      labelText: 'Password',
+                                      border: InputBorder.none,
+                                      icon: new Icon(
+                                        Icons.lock,
+                                        color: Colors.grey.withOpacity(0.2),
+                                      )),
                                   style: TextStyle(fontFamily: "SourceSansPro"),
                                 ),
                               ),
@@ -225,7 +238,6 @@ class _LoginState extends State<Login> {
                                   ],
                                 ),
                               ),
-
                             ],
                           ),
                         )

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ulife_rc/shared/SharedLibrary.dart';
+
+import 'shared/SharedLibrary.dart';
 
 class Welcome extends StatefulWidget {
   Welcome({Key key, this.title}) : super(key: key);
@@ -24,7 +25,6 @@ class _WelcomeState extends State<Welcome> {
   bool isLoading = false;
   String invalidNumber = "";
 
-
   void _incrementCounter() {
     setState(() {
       // This call to setState tells the Flutter framework that something has
@@ -35,13 +35,13 @@ class _WelcomeState extends State<Welcome> {
       _counter++;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     var screenHeight = MediaQuery.of(context).size.height;
     var screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
-
       body: Column(
         children: [
           Container(
@@ -49,7 +49,6 @@ class _WelcomeState extends State<Welcome> {
             height: screenHeight,
             child: Container(
               color: ShareLibrary.colors["background"],
-
               child: Container(
                 width: double.infinity,
                 margin: EdgeInsets.fromLTRB(10, 20, 0, 0),
@@ -58,7 +57,9 @@ class _WelcomeState extends State<Welcome> {
                     Column(
                       children: <Widget>[
                         Container(
-                          child: Image(image: AssetImage("assets/output-onlinepngtools(1).png")),
+                          child: Image(
+                              image: AssetImage(
+                                  "assets/output-onlinepngtools(1).png")),
                           height: 250,
                         ),
                         Container(
@@ -73,7 +74,7 @@ class _WelcomeState extends State<Welcome> {
                                       fontSize: 22,
                                       fontFamily: "SourceSansPro",
                                       fontWeight: FontWeight.bold,
-                                      color: ShareLibrary.colors["text_color"] ),
+                                      color: ShareLibrary.colors["text_color"]),
                                   textAlign: TextAlign.center),
                               Text("Ulife RC",
                                   style: TextStyle(
@@ -81,7 +82,8 @@ class _WelcomeState extends State<Welcome> {
                                       fontSize: 22,
                                       fontFamily: "SourceSansPro",
                                       fontWeight: FontWeight.bold,
-                                      color: ShareLibrary.colors["main__darked"]),
+                                      color:
+                                          ShareLibrary.colors["main__darked"]),
                                   textAlign: TextAlign.center),
                             ],
                           ),
@@ -138,14 +140,17 @@ class _WelcomeState extends State<Welcome> {
                               Container(
                                 margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
                                 child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
                                   children: <Widget>[
                                     InkWell(
-                                      child: Text("LOGIN TO MY ACCOUNT".toUpperCase(),
+                                      child: Text(
+                                          "LOGIN TO MY ACCOUNT".toUpperCase(),
                                           style: TextStyle(
                                               fontSize: 13,
                                               fontFamily: 'SourceSansPro',
-                                              color: Color.fromRGBO(0, 0, 0, 0.75),
+                                              color:
+                                                  Color.fromRGBO(0, 0, 0, 0.75),
                                               fontWeight: FontWeight.bold)),
                                       onTap: () => null,
                                     )
@@ -162,8 +167,6 @@ class _WelcomeState extends State<Welcome> {
               ),
             ),
           ),
-
-
         ],
       ),
     );
